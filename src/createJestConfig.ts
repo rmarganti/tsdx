@@ -11,6 +11,7 @@ export function createJestConfig(
     },
     transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+    modulePaths: ['<rootDir>/src'],
     collectCoverageFrom: ['src/**/*.{ts,tsx}'],
     testMatch: ['<rootDir>/test/**/*.(spec|test).{ts,tsx}'],
     testURL: 'http://localhost',
